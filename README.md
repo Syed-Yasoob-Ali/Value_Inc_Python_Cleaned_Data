@@ -1,18 +1,19 @@
 ### Value_Inc_Python_Cleaned_Data
-This Python script cleans and enriches Value Inc. retail transaction data to prepare it for visualization in Tableau. It calculates key business metrics, extracts client details, and merges seasonal data, producing an analysis-ready CSV for dashboard creation
 
-Process Summary
+This is a Python script that takes Value Inc.’s retail transaction data, tidies it up, and adds extra useful info so it’s ready for a Tableau dashboard. It works out important business numbers, pulls out client details, and mixes in seasonal info so the final file is all set for analysis.
 
-1. Load datasets with Pandas
+### What the code does:
 
-
-2. Engineer profit, sales, cost, markup, and date
+1. Opens the data files using Pandas.
 
 
-3. Extract client details from ClientKeywords
+2. Works out profit, sales, cost, markup, and combines dates into one column.
 
 
-4. Merge seasonal data
+3. Pulls out client age, type, and contract length from the ClientKeywords column.
 
 
-5. Export cleaned CSV for Tableau
+4. Joins the main data with a file that shows which season each month falls into.
+
+
+5. Saves the cleaned-up data as a new CSV file you can drop straight into Tableau.
